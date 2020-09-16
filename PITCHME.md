@@ -1,5 +1,5 @@
 @snap[center span-45]
-![Anisble Molecule](assets/img/molecule_logo.png)
+![heigh=500px width=500px alt=Anisble Molecule](assets/img/molecule_logo.png)
 @snapend
 
 ---
