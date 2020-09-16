@@ -49,8 +49,8 @@
     └── main.yml
 ```
 @snap[south span-100 text-gray text-08]
-@[1-7,20-26, zoom-12](Standard Ansible role directory structure)
-@[8-19, zoom-12](Molecule directory structure)
+@[1-7,19-26, zoom-12](Standard Ansible role directory structure)
+@[8-18, zoom-12](Molecule directory structure)
 @[9, zoom-12](Test scenario with implicit defined name derived from the directory - represents one test case with at least molecule.yml)
 @[11, zoom-12](Encapsulates test scenario configuration including inventory configuration, infrastructure setup and life cycle)
 @[10, zoom-12](Contains an Ansible playbook with the actual role to run applied to the designated hosts)
