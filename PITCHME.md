@@ -1,4 +1,6 @@
+@snap[center span-45]
 ![Anisble Molecule](assets/img/molecule_logo.png)
+@snapend
 
 ---
 
