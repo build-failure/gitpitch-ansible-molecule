@@ -52,7 +52,7 @@
 @[1-7,19-26, zoom-12](Standard Ansible role directory structure)
 @[8-18, zoom-12](Molecule directory structure)
 @[9, zoom-12](Test scenario with implicit defined name derived from the directory - represents one test case with at least molecule.yml)
-@[11, zoom-12](Test scenario configuration including inventory configuration, infrastructure setup and life cycle)
+@[11, zoom-12](Test scenario configuration including inventory configuration, infrastructure setup and lifecycle)
 @[10, zoom-12](The Ansible playbook with the actual role to run applied to the designated hosts)
 @[12, zoom-12](The Ansible playbook with preparation steps to establish a certain test situation)
 @[13, zoom-12](The Ansible playbook with verification steps to validate the role execution effects)
@@ -98,10 +98,61 @@ verifier:
 @[6-9, zoom-12](The test target platform hosts)
 @[10-22, zoom-12](The provisioner configuration, including inventory and playbook definitions)
 @[11, zoom-12](The provisioner - currently Ansible only)
-@[12-15, zoom-12](Host and group inventory variables available within the global scope for all life cycle playbooks)
+@[12-15, zoom-12](Host and group inventory variables available within the global scope for all lifecycle playbooks)
 @[16-18, zoom-12](The Linter configuration)
-@[19-22, zoom-12](Test life cycle playbooks)
+@[19-22, zoom-12](Test lifecycle playbooks)
 @[23-27, zoom-12](The verifier configuration)
 @snapend
 
 ---
+
+## ./molecule/default/molecule.yml
+
+```yml
+scenario:
+  create_sequence:
+    - dependency
+    - create
+    - prepare
+  check_sequence:
+    - dependency
+    - cleanup
+    - destroy
+    - create
+    - prepare
+    - converge
+    - check
+    - destroy
+  converge_sequence:
+    - dependency
+    - create
+    - prepare
+    - converge
+  destroy_sequence:
+    - dependency
+    - cleanup
+    - destroy
+```
+
+---
+    
+## Development Lifecycle
+
+```console
+molecule create -s default
+molecule converge -s default
+molecule verify -s default
+molecule destroy -s default
+```
+
+---
+
+## Continuous Integration
+
+```console
+molecule test
+```
+
+## Hands-On
+
+[ansible-role-hello-world](https://github.com/build-failure/ansible-role-hello-world)
