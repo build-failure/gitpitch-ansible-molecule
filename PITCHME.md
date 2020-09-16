@@ -8,11 +8,9 @@
 ## Motivation
 @snapend
 
-- Clear test workflow based on infrastructure configuration automation specifics
-- Consistent well-written code, easy to understand and maintain
-- Unified test infrastructure management will support for various providers
-- Strive for continuous integration and improvement
-- Short development iteration cycle
+- Clean well-written code
+- Short development iteration cycles
+- Consistent test infrastructure management
 
 ---
 
