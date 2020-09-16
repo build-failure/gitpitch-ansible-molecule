@@ -1,4 +1,6 @@
+@snap[north span-50 text-center]
 # Ansible Molecule
+@snapend
 
 @snap[south span-45]
 ![IMAGE](assets/img/molecule_logo.png)
