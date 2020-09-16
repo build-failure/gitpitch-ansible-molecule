@@ -1,5 +1,7 @@
 # Ansible Molecule
 
+![IMAGE](assets/img/molecule_logo.png)
+
 ---
 
 ## Features
