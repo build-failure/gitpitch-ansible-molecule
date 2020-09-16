@@ -1,5 +1,9 @@
 #gp-logo img {
-  max-height: 13em;
+  max-height: 5em;
+}
+
+.reveal pre code {
+  font-size: 75%;
 }
 
 .spaced li {
