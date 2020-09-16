@@ -97,6 +97,10 @@ verifier:
 @[3-5, zoom-12](Specifies the linter configuration.)
 @[6-9, zoom-12](Declares the test platform hosts.)
 @[10-22, zoom-12](Contains the provisioner configuration, including inventory and playbook definitions.)
+@[11, zoom-12](Defines the provisioner - the only available one currently is Ansible)
+@[12-15, zoom-12](Contains host and group inventory variables)
+@[16-18, zoom-12](Configures the linter.)
+@[19-22, zoom-12](Specifies test life cycle playbooks.)
 @[23-27, zoom-12](Specifies the verifier configuration.)
 @snapend
 
