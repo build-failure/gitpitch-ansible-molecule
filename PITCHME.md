@@ -14,7 +14,9 @@
 
 ---
 
+@snap[north]
 ## Benefits
+@snapend
 
 - Standardized testing infrastructure configuration
 - Fast, iterative development loops
@@ -24,7 +26,9 @@
 ---
 @title[Project Structure]
 
+@snap[north]
 ## ./
+@snapend
 
 ```console
 ├── defaults
@@ -66,7 +70,9 @@
 ---
 @title[Configuration Structure - Basics]
 
+@snap[north]
 ## ./molecule/default/molecule.yml
+@snapend
 
 ```yml
 driver:
@@ -113,7 +119,10 @@ verifier:
 ---
 
 @title[Configuration Structure - Lifecycle Management 1]
+
+@snap[north]
 ## ./molecule/default/molecule.yml
+@snapend
 
 ```yml
 scenario:
@@ -152,7 +161,9 @@ scenario:
 
 @title[Configuration Structure - Lifecycle Management 2]
 
+@snap[north]
 ## ./molecule/default/molecule.yml
+@snapend
 
 ```yml
 scenario:
@@ -179,7 +190,9 @@ scenario:
 ---
 @title[Development Lifecycle]
 
+@snap[north]
 ## Development Lifecycle
+@snapend
 
 ```console
 molecule create -s default
@@ -191,7 +204,9 @@ molecule destroy -s default
 ---
 @title[Continuous Integration]
 
+@snap[north]
 ## Continuous Integration
+@snapend
 
 ```console
 molecule test
@@ -200,6 +215,8 @@ molecule test
 ---
 @title[Hands-On]
 
+@snap[north]
 ## Hands-On
+@snapend
 
 [ansible-role-hello-world](https://github.com/build-failure/ansible-role-hello-world)
