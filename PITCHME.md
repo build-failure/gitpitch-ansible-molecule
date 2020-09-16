@@ -8,9 +8,13 @@
 ## Motivation
 @snapend
 
-- Clean well-written code
-- Short development iteration cycles
-- Consistent test infrastructure management
+- Readability
+- Correctness
+- Reliability
+- Reusability
+- Extendability
+- Flexibility
+- Efficiency
 
 ---
 
@@ -18,11 +22,11 @@
 ## Benefits
 @snapend
 
-- Standardized testing infrastructure configuration
-- Fast, iterative development loops
-- All-in-one, batteries included validation for syntax, style, idempotence, correctness
-- Trivially add CI for your Ansible, on any platform that lets you run a container
-
+- Clear test workflow based on infrastructure configuration automation specifics
+- Consistent well-written code, easy to understand and maintain
+- Unified test infrastructure management will support for various providers
+- Support for continuous integration	
+- Short development iteration cycle
 ---
 @title[Project Structure]
 
