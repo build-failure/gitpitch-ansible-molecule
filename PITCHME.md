@@ -50,7 +50,10 @@
 ```
 @snap[south span-100 text-gray text-08]
 @[9, zoom-12](Test scenario with implicit defined name derived from the directory - represents one test case with at least molecule.yml)
-@[6,7, zoom-12](Using GitPitch live code presenting with optional annotations.)
-@[8-9, zoom-12](This means no more switching between your slide deck and IDE on stage.)
+@[11, zoom-12](Encapsulates test scenario configuration including inventory configuration, infrastructure setup and life cycle)
+@[10, zoom-12](Contains an Ansible playbook with the actual role to run applied to the designated hosts)
+@[12, zoom-12](Contains an Ansible playbook with preparation steps to establish a certain test situation)
+@[13, zoom-12](Contains an Ansible playbook with verification steps to validate the role execution effects)
+
 @snapend
 
