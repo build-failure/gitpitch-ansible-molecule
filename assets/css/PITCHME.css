@@ -1,3 +1,7 @@
+#gp-logo img {
+  max-height: 13em;
+}
+
 .spaced li {
   margin:0 0 10px 0;
 }
