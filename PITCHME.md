@@ -93,15 +93,15 @@ verifier:
 ```
 
 @snap[south span-100 text-gray text-08]
-@[1-2, zoom-12](The test infrastructure provider - major cloud and local providers supported (Azure, DigitalOcean, AWS, GCP, Hetzner Cloud, Docker, Vagrant).)
-@[3-5, zoom-12](The linter configuration.)
-@[6-9, zoom-12](The test platform hosts.)
-@[10-22, zoom-12](The provisioner configuration, including inventory and playbook definitions.)
-@[11, zoom-12](The provisioner - the only available currently is Ansible)
+@[1-2, zoom-12](The test infrastructure provider - major cloud and local providers supported (Azure, DigitalOcean, AWS, GCP, Hetzner Cloud, Docker, Vagrant))
+@[3-5, zoom-12](The linter configuration)
+@[6-9, zoom-12](The test target platform hosts)
+@[10-22, zoom-12](The provisioner configuration, including inventory and playbook definitions)
+@[11, zoom-12](The provisioner - currently Ansible only)
 @[12-15, zoom-12](Host and group inventory variables available within the global scope for all life cycle playbooks)
-@[16-18, zoom-12](The Linter configuration.)
-@[19-22, zoom-12](Test life cycle playbooks.)
-@[23-27, zoom-12](The verifier configuration.)
+@[16-18, zoom-12](The Linter configuration)
+@[19-22, zoom-12](Test life cycle playbooks)
+@[23-27, zoom-12](The verifier configuration)
 @snapend
 
 ---
