@@ -60,7 +60,7 @@
 
 ---
 
-## molecule.yml
+## ansible-role-hello-world/molecule/default/molecule.yml
 
 ```yml
 driver:
