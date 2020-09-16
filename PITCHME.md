@@ -70,6 +70,19 @@ platforms:
   - name: ${MOLECULE_TEST_SCOPE:-default}-1
     server_type: cx11
     image: ${MOLECULE_PLATFORM-debian-10}
+provisioner:
+  name: ansible
+  inventory:
+    group_vars:
+      all:
+        foo: bar
+  lint: |
+    set -e
+    ansible-lint
+  playbooks:
+    create: ../resources/playbooks/create.yml
+    destroy: ../resources/playbooks/destroy.yml
+    verify: verify.yml
 verifier:
   name: ansible
   lint: |
@@ -78,27 +91,3 @@ verifier:
 ```
 
 ---
-
-## molecule.yml Structure
-
-```yml
-provisioner:
-  name: ansible
-  config_options:
-    defaults:
-      interpreter_python: auto_silent
-  inventory:
-    group_vars:
-      all:
-        test_hello_world_dir: /tmp/shared/hello-world
-        test_hello_world_message: Hello World!
-        hello_world_dir: "{{ test_hello_world_dir }}"
-        hello_world_message: "{{ test_hello_world_message }}"
-  lint: |
-    set -e
-    ansible-lint
-  playbooks:
-    create: ../resources/playbooks/create.yml
-    destroy: ../resources/playbooks/destroy.yml
-    verify: verify.yml
-```
