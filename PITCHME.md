@@ -20,6 +20,7 @@
 - Trivially add CI for your Ansible, on any platform that lets you run a container
 
 ---
+@title[Project Structure]
 
 ## ./
 
@@ -61,6 +62,7 @@
 @snapend
 
 ---
+@title[Configuration Structure - Basics]
 
 ## ./molecule/default/molecule.yml
 
@@ -108,6 +110,7 @@ verifier:
 
 ---
 
+@title[Configuration Structure - Lifecycle Management 1]
 ## ./molecule/default/molecule.yml
 
 ```yml
@@ -145,6 +148,8 @@ scenario:
 
 ---
 
+@title[Configuration Structure - Lifecycle Management 2]
+
 ## ./molecule/default/molecule.yml
 
 ```yml
@@ -170,6 +175,7 @@ scenario:
 @snapend
 
 ---
+@title[Development Lifecycle]
 
 ## Development Lifecycle
 
@@ -181,6 +187,7 @@ molecule destroy -s default
 ```
 
 ---
+@title[Continuous Integration]
 
 ## Continuous Integration
 
@@ -189,6 +196,7 @@ molecule test
 ```
 
 ---
+@title[Hands-On]
 
 ## Hands-On
 
