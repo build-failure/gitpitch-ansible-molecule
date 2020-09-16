@@ -1,6 +1,8 @@
 # Ansible Molecule
 
+@snap[south span-45]
 ![IMAGE](assets/img/molecule_logo.png)
+@snapend
 
 ---
 
@@ -144,7 +146,33 @@ scenario:
 @snapend
 
 ---
-    
+
+## ./molecule/default/molecule.yml
+
+```yml
+scenario:
+  test_sequence:
+    - dependency
+    - lint
+    - cleanup
+    - destroy
+    - syntax
+    - create
+    - prepare
+    - converge
+    - idempotence
+    - side_effect
+    - verify
+    - cleanup
+    - destroy
+```
+
+@snap[south span-100 text-gray text-08]
+@[2-15, zoom-12](Test goal phase sequence)
+@snapend
+
+---
+
 ## Development Lifecycle
 
 ```console
