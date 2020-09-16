@@ -54,6 +54,47 @@
 @[10, zoom-12](Contains an Ansible playbook with the actual role to run applied to the designated hosts)
 @[12, zoom-12](Contains an Ansible playbook with preparation steps to establish a certain test situation)
 @[13, zoom-12](Contains an Ansible playbook with verification steps to validate the role execution effects)
-
 @snapend
 
+## molecule.yml Structure
+
+```yml
+driver:
+  name: hetznercloud
+lint: |
+  set -e
+  yamllint .
+platforms:
+  - name: ${MOLECULE_TEST_SCOPE:-default}-1
+    server_type: cx11
+    image: ${MOLECULE_PLATFORM-debian-10}
+verifier:
+  name: ansible
+  lint: |
+    set -e
+    ansible-lint
+```
+
+## molecule.yml Structure
+
+```yml
+provisioner:
+  name: ansible
+  config_options:
+    defaults:
+      interpreter_python: auto_silent
+  inventory:
+    group_vars:
+      all:
+        test_hello_world_dir: /tmp/shared/hello-world
+        test_hello_world_message: Hello World!
+        hello_world_dir: "{{ test_hello_world_dir }}"
+        hello_world_message: "{{ test_hello_world_message }}"
+  lint: |
+    set -e
+    ansible-lint
+  playbooks:
+    create: ../resources/playbooks/create.yml
+    destroy: ../resources/playbooks/destroy.yml
+    verify: verify.yml
+```
