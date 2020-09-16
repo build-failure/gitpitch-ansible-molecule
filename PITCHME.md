@@ -56,6 +56,8 @@
 @[13, zoom-12](Contains an Ansible playbook with verification steps to validate the role execution effects)
 @snapend
 
+---
+
 ## molecule.yml Structure
 
 ```yml
@@ -74,6 +76,8 @@ verifier:
     set -e
     ansible-lint
 ```
+
+---
 
 ## molecule.yml Structure
 
