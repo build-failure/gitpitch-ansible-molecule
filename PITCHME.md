@@ -19,7 +19,7 @@
 
 ---
 
-## Project Structure
+## ansible-role-hello-world/
 
 ```console
 ├── defaults
@@ -58,7 +58,7 @@
 
 ---
 
-## molecule.yml Structure
+## molecule.yml
 
 ```yml
 driver:
