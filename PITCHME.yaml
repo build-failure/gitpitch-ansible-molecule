@@ -7,10 +7,10 @@
 #
 theme            : template
 
-theme-background : [ "#5bbdbf" ]
-theme-headline   : [ "IBM Plex Serif", "#FFFFFF", "none", "#FFFFFF", "100", "120", "15" ]
-theme-byline     : [ "IBM Plex Serif", "#FFFFFF", "none", "#FFFFFF", "100", "110", "15" ]
-theme-text       : [ "IBM Plex Serif", "#FFFFFF", "none", "#FFFFFF", "100", "100", "15" ]
+theme-background : [ "#FFFFFF" ]
+theme-headline   : [ "IBM Plex Serif", "#000000", "none", "#FFFFFF", "100", "120", "15" ]
+theme-byline     : [ "IBM Plex Serif", "#000000", "none", "#FFFFFF", "100", "110", "15" ]
+theme-text       : [ "IBM Plex Serif", "#000000", "none", "#FFFFFF", "100", "100", "15" ]
 theme-links      : [ "#F1C40F", "#5254F7" ]
 theme-code       : [ "Source Code Pro", "100", "120" ]
 theme-controls   : [ "#C0C0C0" ]
