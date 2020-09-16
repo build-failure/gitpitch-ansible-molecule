@@ -5,12 +5,14 @@
 ---
 
 @snap[north]
-## Features
+## Motivation
 @snapend
 
-- Testing framework
-- Project scaffolding
-- Test infrastructure management
+- Clear test workflow based on infrastructure configuration automation specifics
+- Consistent well-written code, easy to understand and maintain
+- Unified test infrastructure management will support for various providers
+- Strive for continuous integration and improvement
+- Short development iteration cycle
 
 ---
 
