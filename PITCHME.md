@@ -26,7 +26,7 @@
 - Consistent well-written code, easy to understand and maintain
 - Unified test infrastructure management will support for various providers
 - Support for continuous integration	
-- Short development iteration cycle
+- Short development iteration cycles
 ---
 @title[Project Structure]
 
