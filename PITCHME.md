@@ -52,10 +52,10 @@
 @[1-7,19-26, zoom-12](Standard Ansible role directory structure)
 @[8-18, zoom-12](Molecule directory structure)
 @[9, zoom-12](Test scenario with implicit defined name derived from the directory - represents one test case with at least molecule.yml)
-@[11, zoom-12](Encapsulates test scenario configuration including inventory configuration, infrastructure setup and life cycle)
-@[10, zoom-12](Contains an Ansible playbook with the actual role to run applied to the designated hosts)
-@[12, zoom-12](Contains an Ansible playbook with preparation steps to establish a certain test situation)
-@[13, zoom-12](Contains an Ansible playbook with verification steps to validate the role execution effects)
+@[11, zoom-12](Test scenario configuration including inventory configuration, infrastructure setup and life cycle)
+@[10, zoom-12](The Ansible playbook with the actual role to run applied to the designated hosts)
+@[12, zoom-12](The Ansible playbook with preparation steps to establish a certain test situation)
+@[13, zoom-12](The Ansible playbook with verification steps to validate the role execution effects)
 @snapend
 
 ---
@@ -93,15 +93,15 @@ verifier:
 ```
 
 @snap[south span-100 text-gray text-08]
-@[1-2, zoom-12](Defines the test infrastructure provider - major cloud and local providers supported (Azure, DigitalOcean, AWS, GCP, Hetzner Cloud, Docker, Vagrant).)
-@[3-5, zoom-12](Specifies the linter configuration.)
-@[6-9, zoom-12](Declares the test platform hosts.)
-@[10-22, zoom-12](Contains the provisioner configuration, including inventory and playbook definitions.)
-@[11, zoom-12](Defines the provisioner - the only available one currently is Ansible)
-@[12-15, zoom-12](Contains host and group inventory variables)
-@[16-18, zoom-12](Configures the linter.)
-@[19-22, zoom-12](Specifies test life cycle playbooks.)
-@[23-27, zoom-12](Specifies the verifier configuration.)
+@[1-2, zoom-12](The test infrastructure provider - major cloud and local providers supported (Azure, DigitalOcean, AWS, GCP, Hetzner Cloud, Docker, Vagrant).)
+@[3-5, zoom-12](The linter configuration.)
+@[6-9, zoom-12](The test platform hosts.)
+@[10-22, zoom-12](The provisioner configuration, including inventory and playbook definitions.)
+@[11, zoom-12](The provisioner - the only available currently is Ansible)
+@[12-15, zoom-12](Host and group inventory variables available within the global scope for all life cycle playbooks)
+@[16-18, zoom-12](The Linter configuration.)
+@[19-22, zoom-12](Test life cycle playbooks.)
+@[23-27, zoom-12](The verifier configuration.)
 @snapend
 
 ---
