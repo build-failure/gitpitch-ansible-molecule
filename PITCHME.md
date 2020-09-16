@@ -4,7 +4,9 @@
 
 ---
 
+@snap[north]
 ## Features
+@snapend
 
 - Testing framework
 - Project scaffolding
