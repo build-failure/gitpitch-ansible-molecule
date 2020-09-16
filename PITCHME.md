@@ -96,7 +96,8 @@ verifier:
 @[1-2, zoom-12](Defines the test infrastructure provider - major cloud and local providers supported (Azure, DigitalOcean, AWS, GCP, Hetzner Cloud, Docker, Vagrant).)
 @[3-5, zoom-12](Specifies the linter configuration.)
 @[6-9, zoom-12](Declares the test platform hosts.)
-@[10-32, zoom-12](Contains the provisioner configuration, including inventory and playbook definitions.)
+@[10-22, zoom-12](Contains the provisioner configuration, including inventory and playbook definitions.)
+@[23-27, zoom-12](Specifies the verifier configuration.)
 @snapend
 
 ---
