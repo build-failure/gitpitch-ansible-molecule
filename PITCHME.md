@@ -134,6 +134,13 @@ scenario:
     - destroy
 ```
 
+@snap[south span-100 text-gray text-08]
+@[2-5, zoom-12](Create goal phase sequence)
+@[6-14, zoom-12](Check goal phase sequence)
+@[16-20, zoom-12](Converge goal phase sequence)
+@[21-24, zoom-12](Destroy goal phase sequence)
+@snapend
+
 ---
     
 ## Development Lifecycle
@@ -152,6 +159,8 @@ molecule destroy -s default
 ```console
 molecule test
 ```
+
+---
 
 ## Hands-On
 
