@@ -70,6 +70,7 @@
 @[10, zoom-12](The Ansible playbook with the actual role to run applied to the designated hosts)
 @[12, zoom-12](The Ansible playbook with preparation steps to establish a certain test situation)
 @[13, zoom-12](The Ansible playbook with verification steps to validate the role execution effects)
+@[14-18, zoom-12](Shared scenario resources - platform creation and teardown playbooks)
 @snapend
 
 ---
