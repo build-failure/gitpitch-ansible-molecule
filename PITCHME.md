@@ -19,12 +19,12 @@
 ---
 
 @snap[north]
-## Benefits
+## Features
 @snapend
 
-- Clear test workflow based on infrastructure configuration automation specifics
-- Consistent well-written code, easy to understand and maintain
-- Unified test infrastructure management will support for various providers
+- Transparent test workflow
+- Consistent well-written code
+- Declarative test infrastructure management
 - Support for continuous integration	
 - Short development iteration cycles
 ---
