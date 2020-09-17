@@ -8,13 +8,14 @@
 ## Motivation
 @snapend
 
+@snap @ul[list-spaced-bullets]
 - Readability
 - Correctness
-- Reliability
 - Reusability
 - Extendability
 - Flexibility
 - Efficiency
+@ulend @snapend
 
 ---
 
